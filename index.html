@@ -9,6 +9,42 @@
     <title>Minefield - The Game</title>
 </head>
 <body>
+    <div class="wrapper">
+        <header>
+            <div class="container h-100 d-flex justify-content-between align-items-center">
+                <!-- logo -->
+                <h1>Minefield</h1>
+                <form id="levelForm" class="d-flex align-items-center">
+                    <div>
+                        <label for="level">Level</label>
+                        <select name="level" id="level">
+                            <option value="easy" selected>Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-warning ms-2">Play</button>
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <div class="container h-100 d-flex justify-content-center align-items-center flex-wrap">
+                <div id="playground" class="d-none">
+                    <!-- ciclo for javascript -->
+                </div>
+                <h3 id="score" class="w-100 d-flex justify-content-center">Choose the level and click the play button!</h3>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container h-100 fs-5 d-flex align-items-center">
+                Made with &hearts; by Nicolò Zibra
+            </div>
+        </footer>
+    </div>
+
     <script src="./js/utility.js"></script>
     <script src="./js/script.js"></script>
 </body>
