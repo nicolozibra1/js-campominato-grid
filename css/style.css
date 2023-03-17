@@ -32,3 +32,6 @@ main{
     background-color: #16166D;
     color: white;
 }
+.dead{
+    background-color: rgb(138, 3, 3);
+}
