@@ -84,6 +84,7 @@
                     </div>
                 </div>
             </div>
+            <!-- ON CLICK -->
             <div class="rules-canvas d-none">
                 <h2 class="text-uppercase text-center py-3">rules of the game</h2>
                 <p>Hi, welcome to the "Minefield" game! The goal of the game is to find all the cells that do not contain a bomb, without selecting the ones that do.</p>
@@ -93,6 +94,16 @@
                 <p>Remember that you can abandon the game at any time, and that you are responsible for your behavior and any damage caused by the game. Additionally, you cannot use any software or tool that could alter the game or influence the results.</p>                  
                 <p>I hope you enjoy playing "Minefield"!</p>
                 <span class="close-canvas">X</span>        
+            </div>
+            <div class="modal-alert d-flex flex-column justify-content-center align-items-center d-none">
+                <h4 class="text-center pt-3 px-3">Are you sure you want to change the difficulty level?</h4>
+                <h6 class="text-uppercase fw-semibold text-center">Your progress will not be saved</h6>
+                <div class="box-btn d-flex justify-content-center align-items-center gap-3">
+                    <form id="levelForm" class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-confirm text-uppercase mt-2" id="btn-confirm">yes i'm sure!</button>
+                    </form>
+                    <button class="btn btn-cancel text-uppercase mt-2" id="btn-cancel">quit</button>
+                </div>
             </div>
         </main>
 

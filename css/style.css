@@ -161,6 +161,28 @@ main{
     padding: 10px 25px;
     border: 1px solid var(--green-olive);
 }
+.modal-alert{
+    width: 600px;
+    height: 200px;
+    background-color: var(--beige-dark);
+    border: 10px solid var(--green-dark);
+    z-index: 7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h6{
+    color:rgb(97, 1, 1);
+}
+#btn-confirm{
+    background-color: var(--green-dark);
+    color: white;
+}
+#btn-cancel{
+    background-color: rgb(97, 1, 1);
+    color: white;
+}
 
 
 

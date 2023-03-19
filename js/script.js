@@ -106,3 +106,17 @@ const closeCan = document.querySelector('.close-canvas');
 closeCan.addEventListener('click', function() {
     canvas.classList.toggle('d-none');
 })
+
+// collego il bottone e faccio apparire il modal
+const chooseLevel = document.getElementById('btn-choose');
+const modalAlert = document.querySelector('.modal-alert')
+
+chooseLevel.addEventListener('click', function() {
+    modalAlert.classList.remove('d-none');
+})
+
+const btnQuit = document.getElementById('btn-cancel');
+
+btnQuit.addEventListener('click', function () {
+    modalAlert.classList.add('d-none');
+})
