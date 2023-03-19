@@ -74,9 +74,7 @@ select option{
     padding: 10px 25px;
     border: 1px solid var(--green-olive);
 }
-#btn-play:hover{
-    background-color: var(--beige-dark);
-}
+
 .img-preload-left{
     position: absolute;
     bottom: 0;
@@ -132,6 +130,7 @@ main{
 .icon i{
     color: white;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 .rules-canvas{
     height: 100%;
@@ -183,7 +182,12 @@ h6{
     background-color: rgb(97, 1, 1);
     color: white;
 }
-
+#audio-on{
+    color: var(--green-dark);
+}
+#audio-off{
+    color: rgb(97, 1, 1);
+}
 
 
 #playground{

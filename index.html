@@ -37,6 +37,9 @@
         <img class="img-preload-left" src="./img/preload-bg-image.png" alt="">
         <img class="img-preload-right" src="./img/preload-bg-image-2.png" alt="">
     </div>
+    <!-- AUDIO -->
+    <audio id="audio-player" src="./audio/soundtrack.mp3"></audio>
+    <audio src="./audio/sound-effect.mp3" id="audio-effect"></audio>
     <!-- THE GAME -->
     <div class="wrapper d-none">
         <header>
@@ -80,7 +83,15 @@
                         <h4 class="text-uppercase text-center text-white">audio setting</h4>
                     </div>
                     <div class="card-body d-flex justify-content-center">
-                        <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+                        <!-- AUDIO SETTING -->
+                        <div id="box-audio-on" class="box-audio d-flex flex-column justify-content-center align-items-center pb-2">
+                            <span class="text-white"><strong>Audio: ON</strong></span>
+                            <i class="fa-solid fa-volume-high" id="audio-on"></i>
+                        </div>
+                        <div id="box-audio-off" class="box-audio d-flex flex-column justify-content-center align-items-center d-none pb-2">
+                            <span class="text-white"><strong>Audio: OFF</strong></span>
+                            <i class="fa-solid fa-volume-xmark" id="audio-off"></i>
+                        </div>
                     </div>
                 </div>
             </div>

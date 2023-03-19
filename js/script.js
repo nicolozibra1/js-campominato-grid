@@ -89,7 +89,12 @@ function play(e) {
             square.classList.add('safe');
             })
         }
-        playground.appendChild(square);       
+        playground.appendChild(square);    
+        
+    // audio
+    const audioPlayer = document.getElementById("audio-player");
+
+    audioPlayer.play();
     }
 }
 
@@ -119,4 +124,34 @@ const btnQuit = document.getElementById('btn-cancel');
 
 btnQuit.addEventListener('click', function () {
     modalAlert.classList.add('d-none');
+})
+
+// AUDIO
+const boxAudioOn = document.getElementById("box-audio-on");
+const boxAudioOff = document.getElementById("box-audio-off");
+const vHigh = document.querySelector(".fa-volume-high")
+const vNone = document.querySelector(".fa-volume-xmark")
+
+boxAudioOn.addEventListener('click', function() {
+    const audioPlayer = document.getElementById("audio-player");
+    audioPlayer.pause();
+    
+    boxAudioOn.classList.toggle("d-none");
+    boxAudioOff.classList.toggle("d-none");
+
+})
+
+boxAudioOff.addEventListener('click', function() {
+    const audioPlayer = document.getElementById("audio-player");
+    audioPlayer.play();
+
+    boxAudioOn.classList.toggle("d-none");
+    boxAudioOff.classList.toggle("d-none");
+})
+
+const btnPlay = document.getElementById('btn-play')
+
+btnPlay.addEventListener('mouseover', function() {
+    const audioEffect = document.getElementById('audio-effect');
+    audioEffect.play();
 })
