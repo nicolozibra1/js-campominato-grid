@@ -87,3 +87,4 @@ function play(e) {
         playground.appendChild(square);       
     }
 }
+
