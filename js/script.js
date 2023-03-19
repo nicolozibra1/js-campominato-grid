@@ -36,6 +36,11 @@ function generateBombs(bombnum, numSquares) {
 }
 function play(e) {
     e.preventDefault();
+
+    const preload = document.querySelector('.wrapper-preload');
+    preload.classList.add('d-none');
+    const game = document.querySelector('.wrapper');
+    game.classList.remove('d-none');
     const playground = document.getElementById('playground');
     playground.innerHTML = "";
     playground.classList.remove('d-none');
@@ -88,3 +93,16 @@ function play(e) {
     }
 }
 
+// collego il bottone e con una funzione faccio apparire il canvas
+const info = document.getElementById('info-btn');
+const canvas = document.querySelector('.rules-canvas');
+
+info.addEventListener('click', function() {
+    canvas.classList.toggle('d-none');
+    
+})
+const closeCan = document.querySelector('.close-canvas');
+
+closeCan.addEventListener('click', function() {
+    canvas.classList.toggle('d-none');
+})

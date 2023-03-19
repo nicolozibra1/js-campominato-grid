@@ -36,7 +36,7 @@
     position: relative;
     width: 800px;
 }
-.box-image{
+.wrapper-preload .box-image{
     width: 250px;
     height: 150px;
     position: absolute;
@@ -45,7 +45,7 @@
     width: 20%;
     z-index: 1;
 }
-.box-image img{
+.wrapper-preload .box-image img{
     transform: rotate(30deg);
     width: 100%;
 }
@@ -65,7 +65,7 @@ select option{
     background: var(--green-olive);
     color: white;
 }
-.btn{
+#btn-play{
     background-color: var(--brown);
     color: white;
     font-weight: bold;
@@ -74,7 +74,7 @@ select option{
     padding: 10px 25px;
     border: 1px solid var(--green-olive);
 }
-.btn:hover{
+#btn-play:hover{
     background-color: var(--beige-dark);
 }
 .img-preload-left{
@@ -91,35 +91,97 @@ select option{
 .wrapper{
     width: 100%;
     height: 100vh;
-    background-color: #7FFFD4;
+    background-color: var(--black-bg);
 }
 
 header, footer{
-    background-color: white;
+    background-color: var(--brown);
     height: 80px;
+}
+.wrapper h1{
+    font-size: 3rem;
+    font-family: 'Rubik Iso', cursive;
+    text-shadow: 5px 5px 3px rgb(64, 83, 59);
+    z-index: 2;
 }
 
 main{
     height: calc(100% - 160px);
     overflow-y: auto;
+    position: relative;
+}
+.soldier-bg{
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+}
+.card-container{
+    position: relative;
+}
+.card{
+    background-color: var(--brown);
+    border: 10px solid var(--green-dark);
+}
+.card-title{
+    background-color: var(--brown);
+    color: var(--black-bg);
+}
+.card-body{
+    background-color: var(--beige-dark);
+}
+.icon i{
+    color: white;
+    font-size: 1.5rem;
+}
+.rules-canvas{
+    height: 100%;
+    width: 50%;
+    background-color: var(--beige-dark);
+    position: absolute;
+    top:0;
+    right:0;
+    z-index:6;
+    border: 10px solid var(--green-dark);
+}
+.rules-canvas p{
+    padding: 0 30px;
+}
+.close-canvas{
+    position: absolute;
+    top:15px;
+    right:30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#btn-choose{
+    background-color: var(--brown);
+    color: white;
+    font-weight: bold;
+    z-index: 3;
+    padding: 10px 25px;
+    border: 1px solid var(--green-olive);
 }
 
+
+
 #playground{
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
+    width: 700px;
+    height: 700px;
+    border: 20px solid var(--green-dark);
     display: flex;
     flex-flow: row wrap;
+    color: white;
+    z-index: 5;;
 }
 .square{
-    border: 1px solid black;
+    border: 1px solid var(--beige-dark);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 .safe{
-    background-color: #16166D;
+    background-color: var(--green-olive);
     color: white;
 }
 .dead{
