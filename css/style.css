@@ -4,7 +4,7 @@
     --beige-light: #BFAD8A;
     --beige-dark: #A6977B;
     --black-bg: #262524;
-    --brown: #594940;
+    --brown: #443831;
 }
 
 /* .debug{
@@ -16,6 +16,7 @@
     width: 100%;
     height: 100vh;
     background-color: var(--black-bg);
+    position: relative;
 }
 .wrapper-preload h1{
     font-size: 8rem;
@@ -28,7 +29,6 @@
     font-weight: bold;
     font-style: italic;
     text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.664);
-    /* background-color: rgba(255, 255, 255, 0.396); */
     background: rgb(38,37,36);
     background: linear-gradient(270deg, rgba(38,37,36,1) 10%, rgba(255, 255, 255, 0.562) 49%, rgba(38,37,36,1) 90%);
 }
@@ -49,6 +49,45 @@
     transform: rotate(30deg);
     width: 100%;
 }
+.wrapper-preload p{
+    color: var(--green-olive);
+    font-weight: bold;
+    text-decoration: overline;
+}
+select{
+    background-color: transparent;
+    border: 5px solid var(--green-olive);
+    border-radius: 10px;
+    color: white;
+    z-index: 3;
+}
+select option{
+    background: var(--green-olive);
+    color: white;
+}
+.btn{
+    background-color: var(--brown);
+    color: white;
+    font-weight: bold;
+    margin-top: 250px;
+    z-index: 3;
+    padding: 10px 25px;
+    border: 1px solid var(--green-olive);
+}
+.btn:hover{
+    background-color: var(--beige-dark);
+}
+.img-preload-left{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+.img-preload-right{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+/* THE GAME */
 .wrapper{
     width: 100%;
     height: 100vh;

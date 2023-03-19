@@ -21,6 +21,20 @@
             </div>
         </div>
         <h3 class="text-uppercase text-center debug w-25 m-auto">"new chapter"</h3>
+        <p class="text-center fst-italic mt-3 w-50 m-auto">'Are you ready to avoid all the bombs, and find safety on the other side of the minefield?'</p>
+        <h5 class="text-white text-center m-auto pt-3">Choose the level of difficulty</h5>
+        <form id="levelForm" class="d-flex flex-column align-items-center justify-content-center pt-2">
+            <div class="d-flex flex flex-column align-items-center">
+                <select name="level" id="level" class="mb-3">
+                    <option value="easy" selected>Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-play text-uppercase" id="btn-play">play now</button>
+        </form>
+        <img class="img-preload-left" src="./img/preload-bg-image.png" alt="">
+        <img class="img-preload-right" src="./img/preload-bg-image-2.png" alt="">
     </div>
     <!-- THE GAME -->
     <div class="wrapper d-none">
@@ -28,7 +42,7 @@
             <div class="container h-100 d-flex justify-content-between align-items-center">
                 <!-- logo -->
                 <h1>Minefield</h1>
-                <form id="levelForm" class="d-flex align-items-center">
+                <!-- <form id="levelForm" class="d-flex align-items-center">
                     <div>
                         <label for="level">Level</label>
                         <select name="level" id="level">
@@ -38,7 +52,7 @@
                         </select>
                     </div>
                     <button type="submit" class="btn btn-warning ms-2">Play</button>
-                </form>
+                </form> -->
             </div>
         </header>
 
