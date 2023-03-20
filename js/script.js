@@ -34,6 +34,15 @@ function generateBombs(bombnum, numSquares) {
     }
     return bombs;
 }
+
+function showAllBombs(bombs) {
+    const squares = document.querySelectorAll('.square');
+    for(let square of squares) {
+        if(bombs.includes(parseInt(square.innerText))) {
+            square.classList.add('dead');
+        }
+    }
+}
 function play(e) {
     e.preventDefault();
 
@@ -82,6 +91,7 @@ function play(e) {
         if (bombs.includes(i)) {
             square.addEventListener('click', function() {
             square.classList.add('dead');
+            showAllBombs(bombs);
             });
         }
         else {
@@ -155,3 +165,5 @@ btnPlay.addEventListener('mouseover', function() {
     const audioEffect = document.getElementById('audio-effect');
     audioEffect.play();
 })
+
+
